@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.gallery img {
+  width: 100px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+.no {
+  background: #ccc;
+}
+.fade-in {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro {
+  font-size: 18px;
+  margin: 15px 0 25px;
+  line-height: 1.6;
+}
+
+.glow-btn {
+  background: linear-gradient(45deg, #ff4d6d, #ff8fa3);
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.glow-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 77, 109, 0.9);
+}
+
+/* Floating hearts */
+.hearts::before {
+  content: "💖 💕 💘 💗 💓";
+  position: fixed;
+  font-size: 24px;
+  animation: float 10s linear infinite;
+  top: 100%;
+  left: 50%;
+}
+
+@keyframes float {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, -120vh);
+  }
+}
+.book {
+  background: #fffaf5;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  font-family: 'Georgia', serif;
+}
+
+.book-title {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.page {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.page h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ff4d6d;
+}
+
+.page p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+blockquote {
+  background: #fff0f3;
+  border-left: 5px solid #ff4d6d;
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.closing {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.final-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px 40px;
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+  max-width: 500px;
+  text-align: center;
+}
+
+.final-subtitle {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.final-question {
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #ff4d6d;
+  text-shadow: 0 0 10px rgba(255,77,109,0.6);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.response {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #ff4d6d;
+}
+.scroll-page {
+  height: auto;
+  min-height: 100vh;
+  overflow-y: auto;
+  display: block;
+  padding: 40px 15px;
+}
+
+.book {
+  margin: 0 auto;
+}
